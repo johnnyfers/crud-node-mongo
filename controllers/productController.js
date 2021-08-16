@@ -77,7 +77,7 @@ const editLink = async (req,res)=>{
     }
 
     try {
-        let doc = await ProductModel.findByIdAndUpdate(id, link)
+        let doc = await ProductModel.findByIdAndUpdate(id, product)
         res.redirect('/');
     } catch (error) {
         res.render('edit', { error, body: req.body });

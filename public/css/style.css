@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+header {
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font: normal 4em 'Roboto', serif;
+    text-align: center;
+}
+
+nav {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav a {
+    flex-grow: 1;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    transform: scaleX(0);
+    background: #333;
+    transition: 0.7s transform cubic-bezier(0.06, 0.9, 0.28, 1);
+}
+
+nav a:hover::after {
+    transform: scaleX(1)
+}
+
+.container {
+    margin: 35px auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.card {
+    margin: auto !important;
+    margin-top: 10px !important;
+    max-width: 330px;
+    min-width: 330px;
+    width: 330px
+}
+#pri {
+    margin-bottom: -10px;
+}
+#desc {
+    font-size: 8pt;
+    color: darkgray;
+    margin-bottom: 10px;
+}
+.btn {
+    color: #fff !important;
+}
