@@ -1,65 +1,67 @@
 <head>
-    <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 
 </head>
 <header>
-    <h1>
-        <%- title %>
-    </h1>
-    <nav>
-        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fas fa-users"></i> Discentes</a>
-        <a href="/"><i class="fas fa-list"></i> Listar Produtos</a>
-        <a href="/add"><i class="fas fa-prescription-bottle-alt"></i> Add Produto</a>
-    </nav>
+  <h1>
+    <%- title %>
+  </h1>
+  <nav>
+    <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fas fa-users"></i> Discentes</a>
+    <a href="/"><i class="fas fa-list"></i> Listar Produtos</a>
+    <a href="/add"><i class="fas fa-prescription-bottle-alt"></i> Add Produto</a>
+  </nav>
 </header>
-      
-      <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Grupo programação WEB</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <table class="table">
-                    <thead>
-                      <tr>
-                        <th scope="col">Matrícula</th>
-                        <th scope="col">Nome</th>
-                        
-                      </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                          <th scope="row">2019***</th>
-                          <td>Higor Lemos Prado </td>
-                        </tr>
-                      <tr>
-                        <th scope="row">2019119009</th>
-                        <td>Iago da Silva Oliveira</td>
-                        
-                      </tr>
-                      <tr>
-                        <th scope="row">2019****</th>
-                        <td>João Victor Lima Ferreira</td>
-                        
-                      </tr>
-                      <tr>
-                        <th scope="row">2019***</th>
-                        <td>Yullo Costa Bomfim</td>
-                      </tr>
-                    </tbody>
-                  </table>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-            </div>
-          </div>
-        </div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Grupo programação WEB</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-    
+      <div class="modal-body">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Matrícula</th>
+              <th scope="col">Nome</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">2019***</th>
+              <td>Higor Lemos Prado </td>
+            </tr>
+            <tr>
+              <th scope="row">2019119009</th>
+              <td>Iago da Silva Oliveira</td>
+
+            </tr>
+            <tr>
+              <th scope="row">
+                2019119012</th>
+              <td>João Victor Lima Ferreira</td>
+
+            </tr>
+            <tr>
+              <th scope="row">2019***</th>
+              <td>Yullo Costa Bomfim</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
