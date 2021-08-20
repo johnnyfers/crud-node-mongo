@@ -16,5 +16,4 @@ router.get('/add', (req, res) => res.render('index',{error:false, body:{}}))
 router.delete('/:id', productController.deleteLink);
 router.delete('/', express.json(), productController.deleteLink)
 
-
 module.exports = router;

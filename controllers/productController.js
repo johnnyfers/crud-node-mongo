@@ -68,6 +68,7 @@ const editLink = async (req,res)=>{
     product.description = req.body.description;
     product.category = req.body.category;
     product.quantity = req.body.quantity;
+    product.brand = req.body.brand;
     product.price = req.body.price;
 
     let id = req.params.id;
