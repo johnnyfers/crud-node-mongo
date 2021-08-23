@@ -20,7 +20,7 @@ const addLink = async (req, res) => {
 
     try {
         await employee.save()
-        res.redirect('/');
+        res.redirect('/employee');
     } catch (error) {
         res.render('addEmployee', { error, body: req.body });
     }
@@ -29,7 +29,7 @@ const addLink = async (req, res) => {
 const allLinks = async (req, res) => {
     try {
         let employees = await EmployeeModel.find({})
-        res.render('all', { employees })
+        res.render('allEmployes', { employees })
     } catch (error) {
         res.send(error);
     }

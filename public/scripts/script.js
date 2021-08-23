@@ -5,11 +5,11 @@ function deleteProduct(id) {
         })
     })
 
-    document.location.reload(true);
+    document.location.reload();
 }
 
 function deleteEmployee(id) {
-    fetch('/employee' + id, { method: 'DELETE' }).then(res => {
+    fetch('/employee/' + id, { method: 'DELETE' }).then(res => {
         res.text().then(employeeId => {
             document.getElementById(employeeId).remove();
         })
@@ -19,7 +19,7 @@ function deleteEmployee(id) {
 }
 
 function deleteCategory(id) {
-    fetch('/category' + id, { method: 'DELETE' }).then(res => {
+    fetch('/category/' + id, { method: 'DELETE' }).then(res => {
         res.text().then(categoryId => {
             document.getElementById(categoryId).remove();
         })
@@ -29,7 +29,7 @@ function deleteCategory(id) {
 }
 
 function deleteBrand(id) {
-    fetch('/brand' + id, { method: 'DELETE' }).then(res => {
+    fetch('/brand/' + id, { method: 'DELETE' }).then(res => {
         res.text().then(brandId => {
             document.getElementById(brandId).remove();
         })

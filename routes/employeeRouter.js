@@ -11,7 +11,7 @@ router.get("/edit/:id", employeeController.loadLink)
 router.post('/', express.urlencoded({extended: true}), employeeController.addLink);
 router.post('/edit/:id',express.urlencoded({extended: true}), employeeController.editLink )
 
-router.get('/add', (req, res) => res.render('index',{error:false, body:{}}))
+router.get('/add', (req, res) => res.render('addEmployee',{error:false, body:{}}))
 
 router.delete('/:id', employeeController.deleteLink);
 router.delete('/', express.json(), employeeController.deleteLink)
