@@ -3,6 +3,8 @@ const brandController = require('../controllers/brandController')
 const router = express.Router();
 
 router.get('/', brandController.allLinks);
+router.get('/getLinks', brandController.getLinks);
+
 router.get('/add', (req, res) => res.render('addBrand',{error:false, body:{}}))
 router.get('/:name', brandController.redirect);
 

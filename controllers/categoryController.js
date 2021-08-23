@@ -5,9 +5,9 @@ const redirect = async (req, res, next) => {
 
     try {
         let doc = await CategoryModel.findOne({ name })
-        if(doc){
+        if (doc) {
             res.redirect(doc.url);
-        } else{
+        } else {
             next();
         }
     } catch (error) {
@@ -35,14 +35,23 @@ const allLinks = async (req, res) => {
     }
 }
 
-const deleteLink = async (req,res)=>{
+const getLinks = async (req, res) => {
+    try {
+        let categories = await CategoryModel.find({})
+        res.json(categories)
+    } catch (error) {
+        res.send(error);
+    }
+}
+
+const deleteLink = async (req, res) => {
     let id = req.params.id;
 
-    if(!id){
+    if (!id) {
         id = req.body.id;
     }
 
-    try{
+    try {
         await CategoryModel.findByIdAndDelete(id)
         res.send(id)
     } catch (error) {
@@ -50,4 +59,4 @@ const deleteLink = async (req,res)=>{
     }
 }
 
-module.exports = { redirect, addLink, allLinks, deleteLink};
+module.exports = { redirect, addLink, allLinks, deleteLink, getLinks };

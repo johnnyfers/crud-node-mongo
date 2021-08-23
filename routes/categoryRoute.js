@@ -3,6 +3,8 @@ const categoryController = require('../controllers/categoryController')
 const router = express.Router();
 
 router.get('/', categoryController.allLinks);
+router.get('/getLinks', categoryController.getLinks);
+
 router.get('/add', (req, res) => res.render('addCategory',{error:false, body:{}}))
 router.get('/:name', categoryController.redirect);
 

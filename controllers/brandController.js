@@ -35,6 +35,15 @@ const allLinks = async (req, res) => {
     }
 }
 
+const getLinks = async (req, res) => {
+    try {
+        let brands = await BrandModel.find({})
+        res.json(brands)
+    } catch (error) {
+        res.send(error);
+    }
+}
+
 const deleteLink = async (req, res) => {
     let id = req.params.id;
 
@@ -50,4 +59,4 @@ const deleteLink = async (req, res) => {
     }
 }
 
-module.exports = { redirect, addLink, allLinks, deleteLink };
+module.exports = { redirect, addLink, allLinks, deleteLink, getLinks };
