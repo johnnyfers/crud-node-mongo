@@ -16,16 +16,12 @@
     <div class="container w-50">
     <h1>Preencha os campos</h1>
     <form class="d-flex flex-column" action="/employee/" method="POST">
-        <input class="mb-2 form-control" name="name" placeholder="nome" value="<%= body.name %>" >
-        <input class="mb-2 form-control"  name="email" placeholder="email" value="<%= body.email %>">
-        <input class="mb-2 form-control"  name="salary" placeholder="salary" value="<%= body.salary %>">
-        <input class="mb-2 form-control"  name="feedback" placeholder="feedback" value="<%= body.feedback %>">
+        <input class="mb-2 form-control" name="name" placeholder="Nome" value="<%= body.name %>" >
+        <input class="mb-2 form-control"  name="email" placeholder="Email" value="<%= body.email %>">
+        <input class="mb-2 form-control"  name="salary" placeholder="Salário" value="<%= body.salary %>">
+        <input class="mb-2 form-control"  name="task" placeholder="Função" value="<%= body.task %>">
         <button class="btn btn-primary form-control">Salvar</button>
     </form>
-
-    <% if(error){ %>
-        <h3><%= error.message %> </h3>
-    <% } %>
 
     </div>
 </body>

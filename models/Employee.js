@@ -4,7 +4,7 @@ const employeeSchema = new mongoose.Schema({
     name: {type: String, required: true},
     email: {type: String, required: true},
     salary:  {type: Number, required: true},
-    feedback:  {type: String, required: false},
+    task:  {type: String, required: false},
 })
 
 module.exports = mongoose.model('EmployeeModel', employeeSchema);

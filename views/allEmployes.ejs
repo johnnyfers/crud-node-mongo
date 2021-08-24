@@ -38,15 +38,15 @@
                         </div>
                         <div>
                             <span class="text-muted" href="<%= employees[i].quantity %>">
-                                <span>Feedback: </span>
-                                <b><%= employees[i].feedback %> Und.</b>
+                                <span>Funcao: </span>
+                                <b><%= employees[i].task %> </b>
                             </span>
                         </div>
                     </div>
                     <div class="d-flex flex-column">
                         <button class="btn btn-danger mb-2" onclick="deleteEmployee('<%= employees[i]._id %>')"
                             )><i class="far fa-trash-alt"></i> Excluir</button>
-                        <a class="btn btn-info " href="/edit/<%= employees[i]._id %> "><i class="far fa-edit"></i> Editar</a>
+                        <a class="btn btn-info " href="/employee/edit/<%= employees[i]._id %> "><i class="far fa-edit"></i> Editar</a>
                     </div>
                 </div>
             </div>

@@ -52,7 +52,7 @@ const editLink = async (req,res)=>{
     employee.name = req.body.name;
     employee.email = req.body.email;
     employee.salary = req.body.salary;
-    employee.feedback = req.body.feedback;
+    employee.task = req.body.task;
 
     let id = req.params.id;
 
