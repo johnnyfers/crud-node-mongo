@@ -26,15 +26,6 @@ const addLink = async (req, res) => {
     }
 }
 
-const allLinks = async (req, res) => {
-    try {
-        let categories = await CategoryModel.find({})
-        res.render('all', { categories })
-    } catch (error) {
-        res.send(error);
-    }
-}
-
 const getLinks = async (req, res) => {
     try {
         let categories = await CategoryModel.find({})
@@ -44,19 +35,4 @@ const getLinks = async (req, res) => {
     }
 }
 
-const deleteLink = async (req, res) => {
-    let id = req.params.id;
-
-    if (!id) {
-        id = req.body.id;
-    }
-
-    try {
-        await CategoryModel.findByIdAndDelete(id)
-        res.send(id)
-    } catch (error) {
-        res.send(error);
-    }
-}
-
-module.exports = { redirect, addLink, allLinks, deleteLink, getLinks };
+module.exports = { redirect, addLink, getLinks };
